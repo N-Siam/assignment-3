@@ -22,6 +22,7 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'bg-color': '#FF4240',
                     }
                 }
             }
@@ -36,10 +37,49 @@
 </head>
 
 <body class="font-manrope">
-    <header class="container mx-auto">
+    <header class="container mx-auto lg:px-9">
         <!-- navbar styles start -->
         <nav>
-
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <ul class="menu menu-vertical px-1 font-bold text-base">
+                                <li class="text-bg-color hover:text-bg-color"><a>Home</a></li>
+                                <li class="hover:text-bg-color"><a>About</a></li>
+                                <li class="hover:text-bg-color"><a>Pages</a></li>
+                                <li class="hover:text-bg-color"><a>Blog</a></li>
+                                <li class="hover:text-bg-color"><a>Contact</a></li>
+                            </ul>
+                    </div>
+                    <a class="font-extrabold text-4xl">Hockey<span class="text-bg-color">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 font-bold text-base">
+                        <li class="text-bg-color hover:text-bg-color"><a>Home</a></li>
+                        <li class="hover:text-bg-color"><a>About</a></li>
+                        <li class="hover:text-bg-color"><a>Pages</a></li>
+                        <li class="hover:text-bg-color"><a>Blog</a></li>
+                        <li class="hover:text-bg-color"><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end space-x-6 flex items-center">
+                   <div>
+                    <i class="fa-solid fa-magnifying-glass w-4 h-4 text-lg"></i>
+                   </div>
+                   <div>
+                    <a class="btn bg-bg-color text-white font-bold text-lg rounded-lg">Get Ticket</a>
+                   </div>
+                </div>
+            </div>
         </nav>
     </header>
 
